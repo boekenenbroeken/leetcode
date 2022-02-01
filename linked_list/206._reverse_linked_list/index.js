@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {ListNode}
  */
-const reverseList = function (head) {
+const reverseList = (head) => {
   if (!head || !head.next) return head;
 
   const reversed = reverseList(head.next);

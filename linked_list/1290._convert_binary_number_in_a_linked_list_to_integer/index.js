@@ -9,7 +9,7 @@
  * @param {ListNode} head
  * @return {number}
  */
-const getDecimalValue = function (head) {
+const getDecimalValue = (head) => {
   let result = 0;
 
   while (head) {
