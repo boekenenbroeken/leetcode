@@ -10,6 +10,6 @@
  * @return {void} Do not return anything, modify node in-place instead.
  */
 const deleteNode = (node) => {
-  node.val = node.next.val;
+  [node.val, node.next.val] = [node.next.val, node.val];
   node.next = node.next.next;
 };
